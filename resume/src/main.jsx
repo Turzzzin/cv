@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/my-resume"> 
+    <BrowserRouter basename="/cv"> 
       <App />
     </BrowserRouter>
   </React.StrictMode>,

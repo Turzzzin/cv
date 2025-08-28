@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/cv/', // This should match your repository name
+  base: '/cv/',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets'
   },
 })
