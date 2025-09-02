@@ -28,6 +28,14 @@
   color: #fff;
 }
 
+.personal-info p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 .job-title {
   font-size: 1.2rem;
   color: #b0b0b0;
@@ -46,6 +54,76 @@
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* About Me Section Styling */
+.hobbies {
+  margin-bottom: 3rem;
+}
+
+.hobbies h2 {
+  color: #4A9EFF;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.hobbies h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #4A9EFF, #7B68EE);
+  border-radius: 2px;
+}
+
+.hobbies {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 3rem;
+}
+
+.hobbies p {
+  line-height: 1.7;
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.hobbies p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Section */
+.personal-contact {
+  margin-top: 3rem;
+}
+
+.personal-contact h2 {
+  color: #4A9EFF;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.personal-contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #4A9EFF, #7B68EE);
+  border-radius: 2px;
 }
 
 .professional-summary {
@@ -125,6 +203,16 @@
   
   .personal-info h1 {
     font-size: 2rem;
+  }
+  
+  .hobbies h2,
+  .personal-contact h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hobbies p {
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
   }
   
   .contact-grid {

@@ -1,5 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Personal from "./pages/Personal";
+import Projects from "./pages/Projects";
+import Professional from "./pages/Professional";
 import "./App.css";
 
 function App() {
@@ -14,8 +16,8 @@ function App() {
       <main className="content">
         <Routes>
           <Route path="/" element={<Personal />} />
-          <Route path="/professional" element={<h1>Professional Experience</h1>} />
-          <Route path="/projects" element={<h1>Projects</h1>} />
+          <Route path="/professional" element={<Professional />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
     </div>

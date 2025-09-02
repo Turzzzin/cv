@@ -15,7 +15,25 @@ function Personal() {
       </div>
       <section className="hobbies">
         <h2>About me</h2>
-        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+          <p>
+            I'm passionate about programming, music, and gaming — three things that shape a big part of my life.  
+          </p>
+
+          <p>
+            In my free time, I enjoy building programming projects (like this one you're reading right now!) or creating little tools to make my life easier.  
+          </p>
+
+          <p>
+            Music is also a huge part of my daily routine. Whether I’m working, working out, gaming, or just chatting with friends, I love having a good playlist in the background.  
+          </p>
+
+          <p>
+            Gaming has been a big hobby for me as well. I was once among the top 500 VALORANT players on the Brazil server and even did some streaming before starting college. These days, I’m more of a casual player, but I still enjoy the game whenever I can.  
+          </p>
+
+          <p>
+            And of course, nothing beats spending quality time with my friends and family.  
+          </p>
       </section>
       <section className="personal-contact">
         <h2>Contact Info</h2>

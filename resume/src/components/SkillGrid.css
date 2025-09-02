@@ -1,0 +1,17 @@
+.skill-grid-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.skill-icons {
+    height: 48px;
+}
+.skill-icon {
+    background: #333;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
