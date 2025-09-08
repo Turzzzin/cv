@@ -1,5 +1,5 @@
 function GitHubPreview({ repo }) {
-  const preview = `https://opengraph.githubassets.com/1/${repo}`;
+  const preview = `https://opengraph.githubassets.com/5/${repo}`;
 
   return (
     <a href={`https://github.com/${repo}`} target="_blank" rel="noopener noreferrer">
