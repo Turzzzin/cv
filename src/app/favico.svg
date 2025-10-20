@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="300" width="300" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 960 960" enable-background="new 0 0 960 960" xml:space="preserve">
+  <g id="graphic_logo">
+    <g id="rectangles">
+      <path class="rectangles1" fill="#bd93f9" width="77" height="90" d="M74 719 L151 719 L151 809 L74 809 Z"></path>
+      <path class="rectangles2" fill="#bd93f9" width="77" height="235" d="M227 567 L304 567 L304 802 L227 802 Z"></path>
+      <path class="rectangles3" fill="#bd93f9" width="77" height="150" d="M380 652 L457 652 L457 802 L380 802 Z"></path>
+      <path class="rectangles4" fill="#bd93f9" width="77" height="300" d="M533 502 L610 502 L610 802 L533 802 Z"></path>
+      <path class="rectangles5" fill="#bd93f9" width="77" height="190" d="M686 612 L763 612 L763 802 L686 802 Z"></path>
+    </g>
+    <g id="circle">
+      <circle class="circle" fill="#bd93f9" cx="450" cy="250" r="150"></circle>
+    </g>
+    <g id="lines">
+      <line class="line1" fill="none" stroke="#bd93f9" stroke-width="20" stroke-miterlimit="10" x1="150" y1="400" x2="450" y2="250"></line>
+      <line class="line2" fill="none" stroke="#bd93f9" stroke-width="20" stroke-miterlimit="10" x1="450" y1="250" x2="750" y2="400"></line>
+    </g>
+  </g>
+</svg>

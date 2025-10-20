@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { useLoading } from "./LoadingContext";
-import { useEffect } from "react";
+import { usePathname } from 'next/navigation';
+import { useLoading } from './LoadingContext';
+import { useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const sections = [
-  { id: "/", name: "Home" },
-  { id: "/about", name: "About" },
-  { id: "/experience", name: "Experience" },
-  { id: "/projects", name: "Projects" },
-  { id: "/contact", name: "Contact" },
+  { id: '/about', name: 'About' },
+  { id: '/experience', name: 'Experience' },
+  { id: '/projects', name: 'Projects' },
+  { id: '/contact', name: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -26,14 +26,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-custom-dark/50 backdrop-blur-lg shadow-md p-4 flex items-center justify-between border-b-2 border-custom-purple">
-      <div className="flex items-center w-64">
-        <Image src="/data-logo.svg" alt="Data Logo" width={40} height={40} className="mr-4" />
-        <div className="flex flex-col">
-          <h1 className="text-2xl font-bold text-custom-light"><span className="gradient-text">Artur</span> Guimarães</h1>
-          <p className="text-md text-custom-light">Data Platform Engineer</p>
-        </div>
-      </div>
+    <nav className="fixed top-0 left-0 w-full bg-[#151417] shadow-md p-4 flex items-center justify-between z-50">
+      <Link href="/" onClick={handleClick} className="flex items-center w-64 cursor-pointer">
+        <Image src="/t-icon.png" alt="T Logo" width={40} height={40} className="mr-4" />
+      </Link>
       <div className="flex-grow flex justify-center">
         <div className="flex space-x-4">
           {sections.map((section) => (
@@ -41,14 +37,14 @@ export default function Navbar() {
               key={section.id}
               href={section.id}
               onClick={handleClick}
-              className={`nav-link text-lg font-medium px-3 py-2 rounded-md uppercase ${pathname === section.id ? "active" : ""}`}
+              className={`nav-link text-lg font-medium px-3 py-2 rounded-md uppercase ${pathname === section.id ? 'active' : ''}`}
             >
               {section.name}
             </a>
           ))}
         </div>
       </div>
-      <div className="w-64"></div> {/* Spacer to balance the flexbox */}
+      <div className="w-64 flex justify-end"></div>
     </nav>
   );
 }

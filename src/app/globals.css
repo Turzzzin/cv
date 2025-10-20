@@ -8,10 +8,17 @@
   --font-body: var(--font-lato);
   --font-code: var(--font-fira-code);
   --font-heading: var(--font-plus-jakarta-sans);
+
+  --background: #151417;
+  --foreground: #e0e0e0;
+  --accent: #00c0ff;
+  --purple: #bd93f9;
 }
 
 body {
   font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(45deg, #00c0ff, #00ff00);
+  background: -webkit-linear-gradient(45deg, var(--accent), #00ff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -27,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   position: relative;
   text-decoration: none;
-  color: #e0e0e0;
+  color: var(--foreground);
 }
 
 .nav-link::after {
@@ -38,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 25%;
-  background-color: #00c0ff;
+  background-color: var(--accent);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -52,3 +59,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* Gradient border for Navbar */
+nav {
+  position: relative;
+}
+
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, var(--accent), #00ff00);
+}
+

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "Contact - Artur Guimarães",
+  title: "Contact | Artur",
   description: "Contact information for Artur Guimarães, a Data Platform Engineer.",
 };
 

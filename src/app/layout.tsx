@@ -1,31 +1,28 @@
-"use client";
+'use client';
 
-import { Fira_Code, Plus_Jakarta_Sans, Lato } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import dynamic from "next/dynamic";
-import { LoadingProvider } from "../components/LoadingContext";
-import ProgressBar from "../components/ProgressBar";
+import { LoadingProvider } from "@/components/LoadingContext";
+import Navbar from "@/components/Navbar";
+import { usePathname } from "next/navigation";
 
-const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
-
-const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-fira-code" });
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus-jakarta-sans" });
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-lato" });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
   return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${firaCode.variable} ${plusJakartaSans.variable} ${lato.variable} flex bg-custom-dark`}
-      >
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/data-logo.svg" sizes="any" />
+      </head>
+      <body className={inter.className}>
         <LoadingProvider>
-          <ProgressBar />
           <Navbar />
-          <div className="flex-1 pt-16">{children}</div>
+          <main className={pathname === '/' ? '' : 'pt-20'}>{children}</main>
         </LoadingProvider>
       </body>
     </html>

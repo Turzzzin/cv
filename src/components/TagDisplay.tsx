@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 interface TagDisplayProps {
   tags: string[];
 }
 
 const tagColors = [
-  "bg-blue-500",
-  "bg-green-500",
-  "bg-purple-500",
-  "bg-red-500",
-  "bg-yellow-500",
-  "bg-indigo-500",
-  "bg-pink-500",
-  "bg-teal-500",
+  { bg: 'bg-blue-500', text: 'text-white' },
+  { bg: 'bg-green-500', text: 'text-white' },
+  { bg: 'bg-purple-500', text: 'text-white' },
+  { bg: 'bg-red-500', text: 'text-white' },
+  { bg: 'bg-yellow-500', text: 'text-white' },
+  { bg: 'bg-indigo-500', text: 'text-white' },
+  { bg: 'bg-pink-500', text: 'text-white' },
+  { bg: 'bg-teal-500', text: 'text-white' },
 ];
 
 export default function TagDisplay({ tags }: TagDisplayProps) {
@@ -29,7 +29,7 @@ export default function TagDisplay({ tags }: TagDisplayProps) {
       {displayedTags.map((tag, index) => (
         <span
           key={index}
-                    className={`${tagColors[index % tagColors.length]} bg-opacity-30 text-white text-xs px-2 py-1 rounded-full inline-flex items-center justify-center`}
+          className={`${tagColors[index % tagColors.length].bg} bg-opacity-30 ${tagColors[index % tagColors.length].text} text-xs px-2 py-1 rounded-full inline-flex items-center justify-center`}
         >
           {tag}
         </span>

@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'custom-dark': '#1a1a1a',
-        'custom-light': '#e0e0e0',
-        'custom-blue': '#00c0ff',
+        'custom-dark': 'var(--background)',
+        'custom-light': 'var(--foreground)',
+        'custom-blue': 'var(--accent)',
         'custom-green': '#00ff00',
-        'custom-purple': '#bd93f9',
+        'custom-purple': 'var(--purple)',
       },
       fontFamily: {
         body: ['var(--font-lato)', 'sans-serif'],
