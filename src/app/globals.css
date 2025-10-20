@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: var(--font-lato);
+  --font-code: var(--font-fira-code);
+  --font-heading: var(--font-plus-jakarta-sans);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(45deg, #00c0ff, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background-color: #00c0ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
